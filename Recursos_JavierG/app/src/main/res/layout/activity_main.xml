@@ -11,7 +11,7 @@
         android:id="@+id/Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Javier Gómez Gijón"
+        android:text="@string/Nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         android:id="@+id/Boton_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Botón_1"
+        android:text="@string/Boton1"
         app:layout_constraintBaseline_toBaselineOf="@+id/Botón_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Botón_2" />
@@ -33,7 +33,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="175dp"
-        android:text="Botón_2"
+        android:text="@string/Boton2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Boton_1"
         app:layout_constraintStart_toStartOf="parent" />
