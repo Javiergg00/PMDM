@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Boton1"
         app:backgroundTint="@color/verde"
+        style="@style/EstiloBoton"
         app:layout_constraintBaseline_toBaselineOf="@+id/Botón_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Botón_2" />
@@ -36,6 +37,7 @@
         android:layout_marginBottom="175dp"
         android:text="@string/Boton2"
         app:backgroundTint="@color/rojo"
+        style="@style/EstiloBoton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Boton_1"
         app:layout_constraintStart_toStartOf="parent" />
