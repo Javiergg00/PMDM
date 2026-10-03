@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Continuar"
         app:backgroundTint="@color/verde"
+        style="@style/EstiloBoton"
         app:layout_constraintBaseline_toBaselineOf="@+id/Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Cancelar" />
@@ -36,6 +37,7 @@
         android:layout_marginBottom="175dp"
         android:text="@string/Cancelar"
         app:backgroundTint="@color/rojo"
+        style="@style/EstiloBoton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Continuar"
         app:layout_constraintStart_toStartOf="parent" />
