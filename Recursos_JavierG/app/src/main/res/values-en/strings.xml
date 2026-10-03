@@ -4,4 +4,6 @@
     <string name="Nombre">Javier Gómez Gijón</string>
     <string name="Boton1">Button1</string>
     <string name="Boton2">Button2</string>
+    <string name="Continuar">Continue</string>
+    <string name="Cancelar">Cancel</string>
 </resources>
