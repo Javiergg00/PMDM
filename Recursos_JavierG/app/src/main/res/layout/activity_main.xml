@@ -18,28 +18,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Boton_1"
+        android:id="@+id/Continuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Boton1"
-        app:backgroundTint="@color/verde"
-        style="@style/EstiloBoton"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Botón_2"
+        android:text="@string/Continuar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Botón_2" />
+        app:layout_constraintStart_toEndOf="@+id/Cancelar" />
 
     <Button
-        android:id="@+id/Botón_2"
+        android:id="@+id/Cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="175dp"
-        android:text="@string/Boton2"
-        app:backgroundTint="@color/rojo"
-        style="@style/EstiloBoton"
+        android:text="@string/Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Boton_1"
+        app:layout_constraintEnd_toStartOf="@+id/Continuar"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
