@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Continuar"
+        app:backgroundTint="@color/verde"
         app:layout_constraintBaseline_toBaselineOf="@+id/Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Cancelar" />
@@ -34,6 +35,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="175dp"
         android:text="@string/Cancelar"
+        app:backgroundTint="@color/rojo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Continuar"
         app:layout_constraintStart_toStartOf="parent" />
