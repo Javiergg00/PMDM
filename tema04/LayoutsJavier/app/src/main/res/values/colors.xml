@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="franja_roja">#E53935</color>
+    <color name="franja_1">#D84315</color>
+    <color name="franja_2">#00897B</color>
+    <color name="franja_3">#F9A825</color>
+    <color name="bloque_oscuro">#263238</color>
+    <color name="bloque_claro">#ECEFF1</color>
+</resources>
