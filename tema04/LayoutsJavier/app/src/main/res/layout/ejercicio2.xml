@@ -5,56 +5,56 @@
     android:layout_height="match_parent">
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="top|start"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="top|center_horizontal"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="top|end"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="center_vertical|start"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="center_vertical|end"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="bottom|start"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="bottom|center_horizontal"
         android:background="#43948A" />
 
     <View
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="bottom|end"
         android:background="#43948A" />
 
