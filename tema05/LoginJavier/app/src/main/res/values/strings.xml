@@ -5,4 +5,8 @@
     <string name="pass_hint">Escribe tu contraseña</string>
     <string name="recordar">Recordar contraseña</string>
     <string name="continuar">Continuar</string>
+    <string name="login_ok">Usuario y contraseña correctos</string>
+    <string name="login_error">Usuario y/o contraseña incorrectos</string>
+    <string name="app_name">LoginJavier</string>
+    <string name="login_ok_recordar">Usuario y contraseña correctos. Almacenados para siguientes accesos</string>
 </resources>
