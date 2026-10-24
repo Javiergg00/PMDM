@@ -1,0 +1,8 @@
+<resources>
+    <string name="correo_etiqueta">Correo electrónico</string>
+    <string name="pass_etiqueta">Contraseña</string>
+    <string name="correo_hint">ejemplo@correo.com</string>
+    <string name="pass_hint">Escribe tu contraseña</string>
+    <string name="recordar">Recordar contraseña</string>
+    <string name="continuar">Continuar</string>
+</resources>

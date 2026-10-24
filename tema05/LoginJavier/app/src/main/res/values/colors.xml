@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo">#1E2A38</color>
+    <color name="texto_claro">#FFFFFF</color>
+    <color name="caja">#2E3F54</color>
+    <color name="boton">#E8A33D</color>
+    <color name="verde">#43A047</color>
+    <color name="rojo">#E53935</color>
+</resources>
