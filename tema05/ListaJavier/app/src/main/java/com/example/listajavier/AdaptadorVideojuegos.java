@@ -14,8 +14,6 @@ import java.util.ArrayList;
 
 public class AdaptadorVideojuegos
         extends RecyclerView.Adapter<AdaptadorVideojuegos.ViewHolder> {
-
-    // La lista de datos que va a pintar
     private final ArrayList<Videojuego> videojuegos;
 
     public AdaptadorVideojuegos(ArrayList<Videojuego> videojuegos) {
@@ -36,14 +34,17 @@ public class AdaptadorVideojuegos
         holder.tvTitulo.setText(videojuego.getTitulo());
         holder.tvSubtitulo.setText(videojuego.getPlataforma());
         holder.ivImagen.setImageResource(videojuego.getImagen());
+
+        holder.itemView.setOnClickListener(v ->
+                Toast.makeText(v.getContext(),
+                        videojuego.getTitulo(),
+                        Toast.LENGTH_SHORT).show());
     }
 
     @Override
     public int getItemCount() {
         return videojuegos.size();
     }
-
-    // El ViewHolder guarda las vistas de UNA fila
     public static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivImagen;
         TextView tvTitulo;

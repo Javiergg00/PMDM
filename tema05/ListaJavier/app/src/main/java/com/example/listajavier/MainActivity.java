@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import androidx.recyclerview.widget.DividerItemDecoration;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         // 2. La lista: cómo se colocan las filas y quién las pinta
         RecyclerView rvLista = findViewById(R.id.rvLista);
         rvLista.setLayoutManager(new LinearLayoutManager(this));
+        rvLista.setAdapter(new AdaptadorVideojuegos(videojuegos));
+
+        rvLista.setLayoutManager(new LinearLayoutManager(this));
+        rvLista.addItemDecoration(
+                new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         rvLista.setAdapter(new AdaptadorVideojuegos(videojuegos));
     }
 }
