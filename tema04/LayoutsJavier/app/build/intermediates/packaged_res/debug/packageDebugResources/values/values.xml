@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="bloque_claro">#ECEFF1</color>
+    <color name="bloque_oscuro">#263238</color>
+    <color name="franja_1">#D84315</color>
+    <color name="franja_2">#00897B</color>
+    <color name="franja_3">#F9A825</color>
+    <color name="franja_roja">#E53935</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">LayoutsJavier</string>
+    <string name="nombre">Javier Gómez Gijón</string>
+    <style name="Base.Theme.LayoutsJavier" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.LayoutsJavier" parent="Base.Theme.LayoutsJavier"/>
+</resources>
