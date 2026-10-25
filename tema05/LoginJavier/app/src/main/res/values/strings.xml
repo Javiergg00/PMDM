@@ -9,4 +9,6 @@
     <string name="login_error">Usuario y/o contraseña incorrectos</string>
     <string name="app_name">LoginJavier</string>
     <string name="login_ok_recordar">Usuario y contraseña correctos. Almacenados para siguientes accesos</string>
+    <string name="error_correo_vacio">Escribe tu correo</string>
+    <string name="error_pass_vacia">Escribe la contraseña</string>
 </resources>

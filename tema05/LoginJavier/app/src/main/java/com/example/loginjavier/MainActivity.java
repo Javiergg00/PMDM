@@ -36,6 +36,19 @@ public class MainActivity extends AppCompatActivity {
             String correo = etCorreo.getText().toString();
             String pass = etPass.getText().toString();
 
+            boolean hayVacios = false;
+            if (correo.isEmpty()) {
+                etCorreo.setError(getString(R.string.error_correo_vacio));
+                hayVacios = true;
+            }
+            if (pass.isEmpty()) {
+                etPass.setError(getString(R.string.error_pass_vacia));
+                hayVacios = true;
+            }
+            if (hayVacios) {
+                return;
+            }
+
             if (correo.equals("javier@correo.com") && pass.equals("1234")) {
                 if (swRecordar.isChecked()) {
                     tvMensaje.setText(R.string.login_ok_recordar);
