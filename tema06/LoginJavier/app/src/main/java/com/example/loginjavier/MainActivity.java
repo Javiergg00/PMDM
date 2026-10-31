@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.materialswitch.MaterialSwitch;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,12 +51,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (correo.equals("javier@correo.com") && pass.equals("1234")) {
-                if (swRecordar.isChecked()) {
-                    tvMensaje.setText(R.string.login_ok_recordar);
-                } else {
-                    tvMensaje.setText(R.string.login_ok);
-                }
-                tvMensaje.setTextColor(getColor(R.color.verde));
+                Intent intent = new Intent(this, MenuActivity.class);
+                intent.putExtra(MenuActivity.EXTRA_CORREO, correo);
+                startActivity(intent);
+                finish();
             } else {
                 tvMensaje.setText(R.string.login_error);
                 tvMensaje.setTextColor(getColor(R.color.rojo));
