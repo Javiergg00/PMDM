@@ -10,6 +10,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import android.content.Intent;
+import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -32,5 +34,12 @@ public class MenuActivity extends AppCompatActivity {
         String correo = getIntent().getStringExtra(EXTRA_CORREO);
         TextView tvSaludo = findViewById(R.id.tvSaludo);
         tvSaludo.setText(getString(R.string.saludo, correo));
+
+        Button btnCerrarSesion = findViewById(R.id.btnCerrarSesion);
+        btnCerrarSesion.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }
