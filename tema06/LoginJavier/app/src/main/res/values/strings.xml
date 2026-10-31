@@ -11,4 +11,7 @@
     <string name="login_ok_recordar">Usuario y contraseña correctos. Almacenados para siguientes accesos</string>
     <string name="error_correo_vacio">Escribe tu correo</string>
     <string name="error_pass_vacia">Escribe la contraseña</string>
+    <string name="menu_titulo">Menú principal</string>
+    <string name="saludo">Hola, %1$s</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
 </resources>
