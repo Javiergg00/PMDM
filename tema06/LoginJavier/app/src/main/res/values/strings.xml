@@ -1,0 +1,14 @@
+<resources>
+    <string name="correo_etiqueta">Correo electrónico</string>
+    <string name="pass_etiqueta">Contraseña</string>
+    <string name="correo_hint">ejemplo@correo.com</string>
+    <string name="pass_hint">Escribe tu contraseña</string>
+    <string name="recordar">Recordar contraseña</string>
+    <string name="continuar">Continuar</string>
+    <string name="login_ok">Usuario y contraseña correctos</string>
+    <string name="login_error">Usuario y/o contraseña incorrectos</string>
+    <string name="app_name">LoginJavier</string>
+    <string name="login_ok_recordar">Usuario y contraseña correctos. Almacenados para siguientes accesos</string>
+    <string name="error_correo_vacio">Escribe tu correo</string>
+    <string name="error_pass_vacia">Escribe la contraseña</string>
+</resources>
