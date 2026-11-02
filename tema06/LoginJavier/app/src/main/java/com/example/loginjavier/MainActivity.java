@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.materialswitch.MaterialSwitch;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
         EditText etCorreo = findViewById(R.id.etCorreo);
         EditText etPass = findViewById(R.id.etPass);
         MaterialSwitch swRecordar = findViewById(R.id.swRecordar);
+        SharedPreferences prefs = getSharedPreferences("sesion", MODE_PRIVATE);
+
+        String guardado = prefs.getString("correo", "");
+        if (!guardado.isEmpty()) {
+            etCorreo.setText(guardado);
+            swRecordar.setChecked(true);
+            etPass.requestFocus();
+        }
         Button btnContinuar = findViewById(R.id.btnContinuar);
         TextView tvMensaje = findViewById(R.id.tvMensaje);
 
@@ -51,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (correo.equals("javier@correo.com") && pass.equals("1234")) {
+                if (swRecordar.isChecked()) {
+                    prefs.edit().putString("correo", correo).apply();
+                } else {
+                    prefs.edit().remove("correo").apply();
+                }
                 Intent intent = new Intent(this, MenuActivity.class);
                 intent.putExtra(MenuActivity.EXTRA_CORREO, correo);
                 startActivity(intent);

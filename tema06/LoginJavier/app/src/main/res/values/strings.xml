@@ -3,7 +3,7 @@
     <string name="pass_etiqueta">Contraseña</string>
     <string name="correo_hint">ejemplo@correo.com</string>
     <string name="pass_hint">Escribe tu contraseña</string>
-    <string name="recordar">Recordar contraseña</string>
+    <string name="recordar">Recordar correo</string>
     <string name="continuar">Continuar</string>
     <string name="login_ok">Usuario y contraseña correctos</string>
     <string name="login_error">Usuario y/o contraseña incorrectos</string>
