@@ -1,5 +1,7 @@
 package com.example.reproductorjavier;
 
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private SoundPool soundPool;
+    private int idCascabeles, idGrito, idSampler, idTambor;
+    private int sonidosCargados = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Reproductor
         Button btnPlay = findViewById(R.id.btnPlay);
         Button btnPausa = findViewById(R.id.btnPausa);
 
@@ -68,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         });
         btnPausa.setOnClickListener(v -> player.pause());
 
-        // Barra de progreso
         seekBar = findViewById(R.id.seekBar);
         tvActual = findViewById(R.id.tvActual);
         tvTotal = findViewById(R.id.tvTotal);
@@ -103,6 +107,42 @@ public class MainActivity extends AppCompatActivity {
                 arrastrando = false;
             }
         });
+
+        Button btnCascabeles = findViewById(R.id.btnCascabeles);
+        Button btnGrito = findViewById(R.id.btnGrito);
+        Button btnSampler = findViewById(R.id.btnSampler);
+        Button btnTambor = findViewById(R.id.btnTambor);
+
+        AudioAttributes atributos = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_GAME)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+        soundPool = new SoundPool.Builder()
+                .setMaxStreams(4)
+                .setAudioAttributes(atributos)
+                .build();
+
+        soundPool.setOnLoadCompleteListener((pool, idSonido, estado) -> {
+            if (estado == 0) {
+                sonidosCargados++;
+                if (sonidosCargados == 4) {
+                    btnCascabeles.setEnabled(true);
+                    btnGrito.setEnabled(true);
+                    btnSampler.setEnabled(true);
+                    btnTambor.setEnabled(true);
+                }
+            }
+        });
+
+        idCascabeles = soundPool.load(this, R.raw.efecto_cascabeles, 1);
+        idGrito = soundPool.load(this, R.raw.efecto_grito, 1);
+        idSampler = soundPool.load(this, R.raw.efecto_sampler, 1);
+        idTambor = soundPool.load(this, R.raw.efecto_tambor, 1);
+
+        btnCascabeles.setOnClickListener(v -> soundPool.play(idCascabeles, 1f, 1f, 1, 0, 1f));
+        btnGrito.setOnClickListener(v -> soundPool.play(idGrito, 1f, 1f, 1, 0, 1f));
+        btnSampler.setOnClickListener(v -> soundPool.play(idSampler, 1f, 1f, 1, 0, 1f));
+        btnTambor.setOnClickListener(v -> soundPool.play(idTambor, 1f, 1f, 1, 0, 1f));
     }
 
     @Override
@@ -123,6 +163,8 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         player.release();
         player = null;
+        soundPool.release();
+        soundPool = null;
     }
 
     private String formatear(long ms) {

@@ -93,4 +93,66 @@
         app:layout_constraintStart_toEndOf="@id/btnPlay"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/tvEfectos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/titulo_efectos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCascabeles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:enabled="false"
+        android:text="@string/efecto_cascabeles"
+        app:layout_constraintTop_toBottomOf="@id/tvEfectos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnGrito" />
+
+    <Button
+        android:id="@+id/btnGrito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="@string/efecto_grito"
+        app:layout_constraintTop_toTopOf="@id/btnCascabeles"
+        app:layout_constraintStart_toEndOf="@id/btnCascabeles"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSampler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:enabled="false"
+        android:text="@string/efecto_sampler"
+        app:layout_constraintTop_toBottomOf="@id/btnCascabeles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnTambor" />
+
+    <Button
+        android:id="@+id/btnTambor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="@string/efecto_tambor"
+        app:layout_constraintTop_toTopOf="@id/btnSampler"
+        app:layout_constraintStart_toEndOf="@id/btnSampler"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,9 @@
     <string name="tiempo_inicial">00:00</string>
     <string name="boton_play">Play</string>
     <string name="boton_pausa">Pausa</string>
+    <string name="titulo_efectos">Efectos de sonido</string>
+    <string name="efecto_cascabeles">Cascabeles</string>
+    <string name="efecto_grito">Grito</string>
+    <string name="efecto_sampler">Sampler</string>
+    <string name="efecto_tambor">Tambor</string>
 </resources>
