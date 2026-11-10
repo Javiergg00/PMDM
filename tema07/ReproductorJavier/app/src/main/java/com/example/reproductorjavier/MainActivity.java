@@ -111,6 +111,20 @@ public class MainActivity extends AppCompatActivity {
         handler.post(actualizarBarra);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        player.pause();
+        handler.removeCallbacks(actualizarBarra);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        player.release();
+        player = null;
+    }
+
     private String formatear(long ms) {
         long segundos = ms / 1000;
         return String.format(Locale.getDefault(), "%02d:%02d", segundos / 60, segundos % 60);
