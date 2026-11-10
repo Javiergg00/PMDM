@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ReproductorJavier</string>
+    <string name="titulo_app">Reproductor Javier</string>
+    <string name="titulo_cancion">Motivational Background (Corporate City)</string>
+    <string name="autor_cancion">DayNigthMorning · Pixabay</string>
+    <string name="tiempo_inicial">00:00</string>
+    <string name="boton_play">Play</string>
+    <string name="boton_pausa">Pausa</string>
 </resources>
