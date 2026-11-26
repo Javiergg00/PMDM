@@ -4,8 +4,9 @@ public class Videojuego {
 
     private String titulo;
     private String plataforma;
-    private int imagen;
-    public Videojuego(String titulo, String plataforma, int imagen) {
+    private String imagen;
+
+    public Videojuego(String titulo, String plataforma, String imagen) {
         this.titulo = titulo;
         this.plataforma = plataforma;
         this.imagen = imagen;
@@ -19,7 +20,7 @@ public class Videojuego {
         return plataforma;
     }
 
-    public int getImagen() {
+    public String getImagen() {
         return imagen;
     }
 }

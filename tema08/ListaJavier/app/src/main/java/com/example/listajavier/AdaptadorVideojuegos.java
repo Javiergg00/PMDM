@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+import com.bumptech.glide.Glide;
 public class AdaptadorVideojuegos
         extends RecyclerView.Adapter<AdaptadorVideojuegos.ViewHolder> {
     private final ArrayList<Videojuego> videojuegos;
@@ -33,7 +33,9 @@ public class AdaptadorVideojuegos
         Videojuego videojuego = videojuegos.get(position);
         holder.tvTitulo.setText(videojuego.getTitulo());
         holder.tvSubtitulo.setText(videojuego.getPlataforma());
-        holder.ivImagen.setImageResource(videojuego.getImagen());
+        Glide.with(holder.itemView)
+                .load(videojuego.getImagen())
+                .into(holder.ivImagen);
 
         holder.itemView.setOnClickListener(v ->
                 Toast.makeText(v.getContext(),
