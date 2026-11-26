@@ -30,3 +30,4 @@ try {
     http_response_code(500);
     echo json_encode(['error' => ERROR_CONEXION], JSON_UNESCAPED_UNICODE);
 }
+// Comprobado: 200, 404 y 400
